@@ -12,7 +12,12 @@
         templateUrl: 'views/main.html',
         controller: 'MainController as mainCtrl'
       })
+    //   .when('/edit/:idx', {
+    //       template:'views/editdetail.html',
+    //       controller: 'MainController as mainCtrl'
+    //   })
       .when('/bag', {
+          templateUrl: 'views/bag.html',
           controller: 'MainController as mainCtrl'
       })
 

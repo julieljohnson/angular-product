@@ -51,12 +51,18 @@
       var getShoesBag = function () {
         return shoesBag;
       };
-      var addShoeBag = function (newShoeBag) {
+      var addShoesBag = function (newShoeBag) {
         shoesBag.push(newShoeBag);
       };
 
-      var removeShoeBag = function (shoeBag) {
-        shoesBag.pop(shoeBag);
+      var removeShoesBag = function (index) {
+        shoesBag.splice(index, 1);
+      };
+
+
+
+      var gerSingleShoes = function(index) {
+          return shoes[index];
       };
 
 
@@ -64,9 +70,11 @@
         getShoes: getShoes,
         addShoe: addShoe,
         getShoesBag: getShoesBag,
-        addShoeBag: addShoeBag,
-        removeShoeBag: removeShoeBag,
-        // getTotalPriceOfCartProducts: getTotalPriceOfCartProducts
+        addShoesBag: addShoesBag,
+        removeShoesBag: removeShoesBag,
+        // deleteItem: deleteItem,
+        // getSingleShoes: getSingleShoes,
+
       };
     });
 

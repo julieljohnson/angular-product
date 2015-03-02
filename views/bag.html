@@ -20,13 +20,13 @@
     <h1>shopping bag.</h1>
 
     <ul>
-        <li class="list1" ng-repeat="shoe in mainCtrl.shoesBag">
+        <li class="list1" ng-repeat="shoes in mainCtrl.shoesBag">
             <div class="first1">
                 <img class="picture1" src="{{shoes.picture}}">
                 <p class = "title1">{{shoes.title}}</p>
             </div>
             <div class="button1">
-                <button class="remove" ng-click="mainCtrl.removeShoeBag(shoe)">x</button>
+                <button class="remove" ng-click="mainCtrl.removeShoesBag(shoes)">X</button>
 
             </div>
         </li>
