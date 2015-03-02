@@ -1,0 +1,39 @@
+body {
+    background-color: #B8B8B8;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin-right:auto;
+    margin-left:auto;
+    padding-bottom: 30px;
+}
+
+.white {
+    list-style-type: none;
+    display: inline;
+    width: 30%;
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+.picture {
+    width: 500px;
+    height: 400px;
+    box-shadow: 10px 10px 5px #888888;
+
+
+
+}
+.header-left {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin-left: 20%;
+}
+.header-right {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+}

@@ -1,0 +1,34 @@
+
+<div class="header">
+
+    <div class="header-left">
+        <a href="#/">Shoes</a>
+
+    </div>
+
+    <div class="header-right">
+        <a href="#/bag" class ="bag nav">bag</a>
+
+
+
+    </div>
+
+</div>
+
+
+<div class="wrapper">
+    <h1>Shoes</h1>
+
+
+    <ul>
+        <li class="white" ng-repeat="shoes in mainCtrl.shoes">
+            <div class="inner">
+                <img class="picture" src="{{shoes.picture}}">
+                <br>
+                <p class = "title">{{shoes.title}}</p>
+                <button class="buy" ng-click="mainCtrl.addShoesBag(shoe)">buy.</button>
+            </div>
+        </li>
+    </ul>
+
+</div>
