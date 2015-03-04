@@ -1,0 +1,33 @@
+
+<h3>{{admin.singleProduct.title}}</h3>
+
+  <img style="width:500px" src="{{admin.singleProduct.photo}}" alt="{{admin.singleProduct.title}}">
+
+  <p>{{admin.singleProduct.description}}</p>
+
+  <p>{{admin.singleProduct.price}}</p>
+  <p><a href="#/admin/edit/{{admin.currentIndex}}">Edit</a> | <a href="" ng-click="admin.deleteProduct(admin.currentIndex)">Delete</a></p>
+
+
+
+<div class="comments">
+
+        <form>
+          <textarea type="text" ng-model="newProduct.comment" placeholder="Comments here"></textarea>
+          <p>{{newProduct.comment}}</p>
+
+          <button ng-click="admin.addProduct(newProduct)">Add Comment</button>
+        </form>
+
+</div>
+
+
+<!--this is where the comments section needs to be too.-->
+<!--created an empty array so you can push to that array for the comments-->
+
+<!--functions should be re-usable-->
+
+
+<!-- when doing modules need to add the dependancies to the index page of the feature-->
+
+<!-- create new folder and within the new feature file add shopping.module.js then shopping.controller.js then shopping.service.js then make a folder inside called views. 

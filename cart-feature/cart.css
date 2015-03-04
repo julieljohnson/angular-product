@@ -1,0 +1,29 @@
+.list1 {
+    list-style-type: none;
+    display: inline;
+    vertical-align: center;
+
+}
+.header {
+    background-image: url('images/shoe22.jpg');
+    height: 700px;
+    width: 100%;
+}
+
+.picture1 {
+    width: 500px;
+    height: 400px;
+    box-shadow: 10px 10px 5px #888888;
+}
+.header-center {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    padding: 5%;
+    margin-left: 29%;
+}
+.header-center a {
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+}

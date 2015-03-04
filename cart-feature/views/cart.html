@@ -1,0 +1,42 @@
+<div class="header">
+
+    <div class="header-left">
+        <a href="#/cart-feature">shoes</a>
+
+    </div>
+
+    <div class="header-right">
+
+
+
+
+    </div>
+
+</div>
+
+
+<div class="s-wrapper">
+    <h1>shopping bag.</h1>
+
+<div ng-contrller="CartController as cart">
+
+    <ul>
+        <li class="list1" ng-repeat="item in cart.items">
+            <div class="first1">
+                <img class="picture1" ng-src="{{item.picture}}">
+                <p class = "title1">{{item.title}}</p>
+                <p class = "price1">{{item.price  | currency}}</p>
+
+            </div>
+            <div class="button1">
+                <button class="remove" ng-click="cart.removeCartProduct(item)">Delete Shoe</button>
+
+            </div>
+        </li>
+    </ul>
+
+</div>
+
+
+
+</div>
