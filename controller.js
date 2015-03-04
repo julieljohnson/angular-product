@@ -1,6 +1,7 @@
 (function () {
     "use strict";
     angular.module('demoApp')
+
     .controller('MainController', function (ProductService) { //scope is going out, so best not to use//
         var mainCtrl = this;
         ProductService.getProducts().success(function (data){

@@ -1,6 +1,7 @@
 (function () {
   "use strict";
   angular.module('demoApp')
+
     .factory('ProductService', function ($http, $rootScope) {
 
         var url = 'http://tiy-fee-rest.herokuapp.com/collections/ngserverjulie';
@@ -115,4 +116,3 @@
             removeCartProduct: removeCartProduct,
         };
     });
-})();
